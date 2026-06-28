@@ -417,20 +417,85 @@ Mewar University<br>
 
 <section id="contact" class="contact fade">
 <div class="container">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-<h2 class="section-title">Contact</h2>
-    <h3>Contact Number</h3>
+<style>
+.contact-icons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    margin:40px 0;
+    flex-wrap:wrap;
+}
 
-<a href="tel:+916205059846">
-📞 +91 6205059846
-</a>
+.contact-icons a{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color:#fff;
+    font-size:32px;
+    transition:0.4s ease;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 0 15px rgba(255,255,255,.3);
+}
 
-<p>Email</p>
-<br>
+.contact-icons a::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,.2);
+    top:-100%;
+    left:0;
+    transition:0.4s;
+}
 
-<a href="mailto:rishukumar387412@gmail.com">
-rishukumar387412@gmail.com
-</a>
+.contact-icons a:hover::before{
+    top:0;
+}
+
+.contact-icons a:hover{
+    transform:translateY(-8px) scale(1.15) rotate(8deg);
+    box-shadow:0 0 30px currentColor;
+}
+
+/* WhatsApp */
+.whatsapp{
+    background:linear-gradient(135deg,#25D366,#128C7E);
+}
+
+/* Gmail */
+.gmail{
+    background:linear-gradient(135deg,#EA4335,#FBBC05,#34A853,#4285F4);
+}
+</style>
+
+<div class="contact-icons">
+
+    <!-- WhatsApp -->
+    <a class="whatsapp"
+       href="https://wa.me/916205059846"
+       target="_blank"
+       title="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Gmail -->
+    <a class="gmail"
+       href="https://mail.google.com/mail/?view=cm&fs=1&to=rishukumar387412@gmail.com"
+       target="_blank"
+       title="Send Email">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+
+</div>
 
 <br><br>
 <!-- Font Awesome -->
