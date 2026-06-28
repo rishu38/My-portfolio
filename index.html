@@ -638,16 +638,76 @@ Mewar University<br>
     </a>
 
 </div>
+<style>
+.location{
+    text-align:center;
+    margin:18px 0 30px;
+}
 
-<p style="color:var(--muted)">
-Aurangabad, Bihar, India
-</p>
+.location a{
+    text-decoration:none;
+    font-size:clamp(18px,3vw,24px);
+    font-weight:700;
+    font-family:'Poppins',sans-serif;
 
+    background:linear-gradient(
+        90deg,
+        #ff4d4d,
+        #ff9800,
+        #ffee00,
+        #00e676,
+        #00b0ff,
+        #7c4dff,
+        #ff4081
+    );
+
+    background-size:300%;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    text-shadow:
+        0 0 10px rgba(255,255,255,.2),
+        0 0 20px rgba(0,229,255,.5);
+
+    animation:rainbowMove 5s linear infinite,
+              floatText 2.5s ease-in-out infinite;
+}
+
+.location a:hover{
+    transform:scale(1.05);
+    display:inline-block;
+}
+
+.location i{
+    color:#ff3b30;
+    -webkit-text-fill-color:#ff3b30;
+    margin-right:8px;
+}
+
+@keyframes rainbowMove{
+    0%{background-position:0%;}
+    100%{background-position:300%;}
+}
+
+@keyframes floatText{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-5px);}
+}
+</style>
+
+<div class="location">
+    <a href="https://www.google.com/maps/search/?api=1&query=Aurangabad+Bihar+India"
+       target="_blank"
+       title="Open in Google Maps">
+        <i class="fa-solid fa-location-dot"></i>
+        Aurangabad, Bihar, India 🇮🇳
+    </a>
+</div>
 </div>
 </section>
 
 <footer>
-© 2026 Rishu Kumar • Data Scientist
+© 2026 Rishu Rajput • Data Scientist
 </footer>
 
 <script>
